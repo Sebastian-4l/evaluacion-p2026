@@ -207,3 +207,65 @@ body {
 .c-restante ul li{
   list-style: none;
 }
+.nosotros{
+  background-color: #ffffff;
+  padding: 4.8rem 3.2rem;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nosotros .izquierda{
+  flex-basis: 45%;
+}
+.nosotros .izquierda span{
+  color: #c0392b;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+.nosotros .izquierda h2{
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+}
+.nosotros .izquierda p{
+  font-size: 1.3rem;
+  color: #555555;
+  margin-bottom: 1.2rem;
+  line-height: 1.8;
+}
+.nosotros .derecha{
+  flex-basis: 45%;
+  border:0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.nosotros .derecha .card{
+  flex-basis: 33.33%;
+  background-color: #ffffff;
+  padding:2rem 1.6rem;
+  text-align: center;
+  border-right: 0.1rem solid #e0ddd5;
+
+}
+.nosotros .derecha .card1{
+  flex-basis: 33.33%;
+  background-color: #ffffff;
+  padding:2rem 1.6rem;
+  text-align: center;
+}
+.nosotros .derecha .card span{
+  font-weight: bold;
+  color: #1a1a1a;
+}
+.nosotros .derecha .card1 span{
+  font-weight: bold;
+  color: #1a1a1a;
+}
+.nosotros .derecha .card small{
+  font-size:1.1rem;
+}
+.nosotros .derecha .card1 small{
+  font-size:1.1rem;
+}
