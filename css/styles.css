@@ -269,3 +269,37 @@ body {
 .nosotros .derecha .card1 small{
   font-size:1.1rem;
 }
+.pedidos{
+  background-color: #f2f0eb;
+  padding:4.8rem 3.2rem;
+  border-top: 0.1rem solid #e0ddd5;
+  border-bottom: 0.1rem solid #e0ddd5;
+  display:flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.introduccion{
+  flex-basis: 28rem;
+  flex-shrink: 0;
+  margin-right: 4.8rem;
+}
+.introduccion span{
+  color: #c0392b;
+  font-size: 1rem;
+}
+.introduccion h2{
+  font-size: 2rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.introduccion p{
+  font-size: 1.2rem;
+  color:#555555;
+  line-height: 1.7;
+}
+.pedidos .lista{
+  flex-basis: 1;
+}
+.pedidos .lista ul li{
+  display:flex;
+}
