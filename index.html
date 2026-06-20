@@ -44,39 +44,57 @@
     <!-- ===================== FIN HEADER ===================== -->
 
     <!-- ===================== INICIO NUESTRO MENÚ ===================== -->
-
-    <span>Selección del chef</span>
-    <h2>Nuestro menú</h2>
-    <a href="#">Ver todos los productos</a>
-
-    <img src="#" alt="Nigiri Salmón" />
-    <h3>Nigiri Salmón</h3>
-    <p>Arroz con salmón fresco y wasabi.</p>
-    <span>$4.990</span>
-    <button type="button">+</button>
-
-    <img src="#" alt="Roll Spicy Tuna" />
-    <h3>Roll Spicy Tuna</h3>
-    <p>Atún, pepino, palta y sésamo.</p>
-    <span>$6.490</span>
-    <button type="button">+</button>
-
-    <img src="#" alt="Tempura Roll" />
-    <h3>Tempura Roll</h3>
-    <p>Camarón tempura y salsa teriyaki.</p>
-    <span>$6.990</span>
-    <button type="button">+</button>
-
-    <img src="#" alt="Sashimi Mix" />
-    <h3>Sashimi Mix</h3>
-    <p>12 piezas premium variadas.</p>
-    <span>$9.990</span>
-    <button type="button">+</button>
-
+    <article class="menu contenedor">
+      <section class="encabezado">
+        <div class="titulo-enc">
+          <span>Selección del chef</span>
+          <h2>Nuestro menú</h2>
+        </div>
+        <a href="#">Ver todos los productos</a>
+      </section>
+      <section class="tarjetas">
+        <div class="tarjeta">
+          <img src="img/sushi1.jpg" alt="Nigiri Salmón" />
+          <h3>Nigiri Salmón</h3>
+          <p>Arroz con salmón fresco y wasabi.</p>
+          <div class="pie-tarjeta">
+            <span>$4.990</span>
+            <button type="button">+</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="img/sushi2.jpg" alt="Roll Spicy Tuna" />
+          <h3>Roll Spicy Tuna</h3>
+          <p>Atún, pepino, palta y sésamo.</p>
+          <div class="pie-tarjeta">
+            <span>$6.490</span>
+            <button type="button">+</button>
+          </div>
+        </div>
+        <div class="tarjeta">
+          <img src="img/sushi3.jpg" alt="Tempura Roll" />
+          <h3>Tempura Roll</h3>
+          <p>Camarón tempura y salsa teriyaki.</p>
+          <div class="pie-tarjeta">
+            <span>$6.990</span>
+            <button type="button">+</button>
+          </div>
+        </div>
+        <div class="tarjeta-ultima">
+          <img src="img/sushi4.jpg" alt="Sashimi Mix" />
+          <h3>Sashimi Mix</h3>
+          <p>12 piezas premium variadas.</p>
+          <div class="pie-tarjeta">
+            <span>$9.990</span>
+            <button type="button">+</button>
+          </div>
+        </div>
+      </section>
+    </article>
     <!-- ===================== FIN NUESTRO MENÚ ===================== -->
 
     <!-- ===================== INICIO LOS MÁS PEDIDOS ===================== -->
-    <article class="pedidos">
+    <article class="pedidos contenedor">
       <section class="introduccion">
         <span>Favoritos</span>
         <h2>Los más pedidos</h2>
@@ -88,25 +106,37 @@
       <section class="lista">
         <ul>
           <li>
-            <img src="#" alt="Miniatura Nigiri Salmón" />
-            <span>Nigiri Salmón</span>
-            <small>Arroz con salmón fresco y wasabi</small>
-            <span>$4.990</span>
-            <small>+320 pedidos</small>
+            <img src="img/sushi1.jpg" alt="Miniatura Nigiri Salmón" />
+            <div class="info">
+              <span class="nombre">Nigiri Salmón</span>
+              <small class="desc">Arroz con salmón fresco y wasabi</small>
+            </div>
+            <div class="meta">
+              <span class="precio">$4.990</span>
+              <small class="conteo">+320 pedidos</small>
+            </div>
           </li>
           <li>
-            <img src="#" alt="Miniatura Roll Spicy Tuna" />
-            <span>Roll Spicy Tuna</span>
-            <small>Atún, pepino, palta y sésamo</small>
-            <span>$6.490</span>
-            <small>+210 pedidos</small>
+            <img src="img/sushi2.jpg" alt="Miniatura Roll Spicy Tuna" />
+            <div class="info">
+              <span class="nombre">Roll Spicy Tuna</span>
+              <small class="desc">Atún, pepino, palta y sésamo</small>
+            </div>
+            <div class="meta">
+              <span class="precio">$6.490</span>
+              <small class="conteo">+210 pedidos</small>
+            </div>
           </li>
-          <li>
-            <img src="#" alt="Miniatura Tempura Roll" />
-            <span>Tempura Roll</span>
-            <small>Camarón tempura y salsa teriyaki</small>
-            <span>$6.990</span>
-            <small>+185 pedidos</small>
+          <li class="ultimo-item">
+            <img src="img/sushi3.jpg" alt="Miniatura Tempura Roll" />
+            <div class="info">
+              <span class="nombre">Tempura Roll</span>
+              <small class="desc">Camarón tempura y salsa teriyaki</small>
+            </div>
+            <div class="meta">
+              <span class="precio">$6.990</span>
+              <small class="conteo">+185 pedidos</small>
+            </div>
           </li>
         </ul>
       </section>
@@ -114,7 +144,7 @@
     <!-- ===================== FIN LOS MÁS PEDIDOS ===================== -->
 
     <!-- ===================== INICIO SOBRE NOSOTROS ===================== -->
-    <article class="nosotros">
+    <article class="nosotros contenedor">
       <section class="izquierda">
         <span>Nuestra historia</span>
         <h2>Sobre nosotros</h2>
@@ -149,56 +179,59 @@
     <!-- ===================== FIN SOBRE NOSOTROS ===================== -->
 
     <!-- ===================== INICIO CONTACTO ===================== -->
+    <article class="contacto contenedor">
+      <section class="contacto-izquierda">
+        <span>Escríbenos</span>
+        <h2>Contáctanos</h2>
+        <p>
+          Reservas, consultas o simplemente salúdanos. Respondemos en menos de
+          24 horas.
+        </p>
+        <ul>
+          <li>Teléfono: +56 9 1234 5678</li>
+          <li>
+            Correo: <a href="mailto:hola@tawenosushi.cl">hola@tawenosushi.cl</a>
+          </li>
+          <li>Horario: Mar–Dom 12:00–22:00</li>
+        </ul>
+      </section>
+      <section class="contacto-derecha">
+        <form action="#" method="post">
+          <label for="nombre">Nombre completo</label>
+          <input
+            type="text"
+            id="nombre"
+            name="nombre"
+            placeholder="Tu nombre"
+            required
+          />
 
-    <span>Escríbenos</span>
-    <h2>Contáctanos</h2>
-    <p>
-      Reservas, consultas o simplemente salúdanos. Respondemos en menos de 24
-      horas.
-    </p>
-    <ul>
-      <li>Teléfono: +56 9 1234 5678</li>
-      <li>
-        Correo: <a href="mailto:hola@tawenosushi.cl">hola@tawenosushi.cl</a>
-      </li>
-      <li>Horario: Mar–Dom 12:00–22:00</li>
-    </ul>
+          <label for="email">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="tucorreo@ejemplo.com"
+            required
+          />
 
-    <form action="#" method="post">
-      <label for="nombre">Nombre completo</label>
-      <input
-        type="text"
-        id="nombre"
-        name="nombre"
-        placeholder="Tu nombre"
-        required
-      />
+          <label for="mensaje">Mensaje</label>
+          <textarea
+            id="mensaje"
+            name="mensaje"
+            rows="5"
+            placeholder="Escribe tu mensaje aquí..."
+            required
+          ></textarea>
 
-      <label for="email">Correo electrónico</label>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="tucorreo@ejemplo.com"
-        required
-      />
-
-      <label for="mensaje">Mensaje</label>
-      <textarea
-        id="mensaje"
-        name="mensaje"
-        rows="5"
-        placeholder="Escribe tu mensaje aquí..."
-        required
-      ></textarea>
-
-      <button type="submit">Enviar mensaje</button>
-    </form>
-
+          <button type="submit">Enviar mensaje</button>
+        </form>
+      </section>
+    </article>
     <!-- ===================== FIN CONTACTO ===================== -->
 
     <!-- ===================== INICIO FOOTER ===================== -->
-    <footer class="foot">
+    <footer class="foot contenedor">
       <section class="pie-columna">
         <div class="columna-ancha">
           <h3>TAWENO SUSHI</h3>

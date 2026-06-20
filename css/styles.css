@@ -22,6 +22,7 @@ img {
 /* Tu código va aquí */
 body {
   font-size: 1.6rem;
+  background-color: #f9f8f5;
 }
 
 .contenedor {
@@ -274,7 +275,6 @@ body {
   padding:4.8rem 3.2rem;
   border-top: 0.1rem solid #e0ddd5;
   border-bottom: 0.1rem solid #e0ddd5;
-  display:flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -297,9 +297,250 @@ body {
   color:#555555;
   line-height: 1.7;
 }
-.pedidos .lista{
+.lista{
   flex-basis: 1;
 }
+.lista ul{
+  flex-basis: 1;
+}
+.pedidos .lista ul{
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
 .pedidos .lista ul li{
   display:flex;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+  border-bottom: 0.1rem solid #e0ddd5;
+}
+.pedidos .lista ul .ultimo-item{
+  display:flex;
+  align-items: center;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
+}
+.pedidos .lista ul li img{
+  width: 5.2rem;
+  height: 5.2rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  margin-right: 1.4rem;
+}
+.info{
+  display:flex;
+  flex-direction: column;
+}
+.pedidos .lista ul li .nombre{
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.pedidos .lista ul li .desc{
+  font-size: 1.1rem;
+  color: #555555;
+}
+.meta{
+  display: flex;
+  margin-left: auto;
+  text-align: right;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.pedidos .lista ul li .precio{
+  font-size: 1.3rem;
+  color: #c0392b;
+  font-weight: 500;
+}
+.pedidos .lista ul li .conteo{
+  font-size: 1rem;
+  color: #555555;
+}
+
+.menu{
+  background-color: #ffffff;
+  padding:4.8rem 3.2rem;
+}
+
+.encabezado{
+  display:flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2.8rem;
+}
+.encabezado span{
+  color: #c0392b;
+  font-size: 1rem;
+  margin-bottom: 0.6rem;
+}
+.encabezado h2{
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+.encabezado a{
+  color: #555555;
+  font-size: 1.2rem;
+  border-bottom: 0.1rem solid #e0ddd5;
+}
+.tarjetas{
+  display:flex;
+  align-items: stretch;
+  justify-content: space-between;
+}
+.tarjetas .tarjeta{
+  flex-basis: 25%;
+  padding: 1.2rem;
+  background-color: #ffffff;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  margin-right: 2rem;
+}
+.tarjetas .tarjeta-ultima{
+  flex-basis: 25%;
+  padding: 1.2rem;
+  background-color: #ffffff;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+}
+.tarjetas .tarjeta img{
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+.tarjetas .tarjeta-ultima img{
+  height: 20rem;
+  width: 100%;
+  object-fit: cover;
+}
+.tarjetas .tarjeta h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+.tarjetas .tarjeta-ultima h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+.tarjetas .tarjeta p{
+  font-size: 1.1rem;
+  color: #555555;
+  margin-bottom: 1rem;
+}
+.tarjetas .tarjeta-ultima p{
+  font-size: 1.1rem;
+  color: #555555;
+  margin-bottom: 1rem;
+}
+.pie-tarjeta{
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pie-tarjeta span{
+  color:#c0392b;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+.pie-tarjeta button{
+  background-color: #1a1a1a;
+  color: #ffffff;
+  width: 4rem;
+  height: 3rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.menu .encabezado .titulo-enc{
+  display: flex;
+  flex-direction: column;
+}
+.contacto{
+  background-color: #f2f0eb;
+  padding: 4.8rem 3.2rem;
+  border-top: 0.1rem solid #e0ddd5;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.contacto-izquierda{
+  flex-basis: 40%;
+}
+.contacto-izquierda span{
+  color: #c0392b;
+  font-size: 1rem;
+}
+.contacto-izquierda h2{
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin-bottom: 1.6rem;
+  margin-top: 0;
+}
+.contacto-izquierda p{
+  font-size: 1.3rem;
+  color: #555555;
+  line-height: 1.8;
+  margin-bottom: 2.4rem;
+}
+.contacto-izquierda ul{
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.contacto-izquierda ul li{
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color:#555555;
+  list-style: none;
+}
+.contacto-izquierda ul li a{
+  color: #c0392b;
+  text-decoration: none;
+}
+.contacto-derecha{
+  flex-basis: 50%;
+  background-color: #ffffff;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 1rem;
+  padding: 2.4rem;
+}
+.contacto-derecha form{
+  display: flex;
+  flex-direction: column;
+}
+.contacto-derecha form label{
+  margin-bottom: 1.4rem;
+  font-size: 1.1rem;
+  color: #555555;
+}
+.contacto-derecha form input{
+  margin-bottom: 1rem;
+  background-color: #f9f8f5;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.contacto-derecha form textarea{
+  margin-bottom: 1rem;
+  background-color: #f9f8f5;
+  border: 0.1rem solid #e0ddd5;
+  border-radius: 0.6rem;
+  padding: 0.9rem 1.2rem;
+  font-size: 1.2rem;
+  width: 100%;
+}
+.contacto-derecha form button{
+  margin-bottom: 1rem;
+  margin-top: 0.4rem;
+  width: 100%;
+  border-radius: 0.6rem;
+  border:none;
+  padding: 1rem;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #ffffff;
+  background-color: #c0392b;
 }
